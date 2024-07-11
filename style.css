@@ -1,0 +1,56 @@
+body,
+.jumbotron {
+	padding: 30px;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	background: #efefef;
+}
+ul {
+	margin-bottom: 0;
+}
+.accordion {
+	background: #fff;
+	border-radius: 5px;
+	padding: 30px;
+}
+
+.title {
+	border-top: 1px solid #eee;
+	padding: 20px;
+	cursor: pointer;
+	position: relative;
+}
+.title h2 {
+	font-size: 20px;
+	margin: 0;
+	color: orange;
+}
+.title .glyphicon {
+	position: absolute;
+	right: 20px;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: orange;
+	transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+.story {
+	max-height: 0;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.story p {
+	padding: 20px;
+}
+
+.accordion li.open .title .glyphicon {
+	transform: rotate(180deg);
+}
+.accordion li.open .story {
+	max-height: 150px;
+}
